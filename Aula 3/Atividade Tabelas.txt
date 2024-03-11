@@ -1,0 +1,4 @@
+1) Monte uma tabela em HTML com 5 colunas e 4 linhas(sem contar a primeira linha com o nome das colunas), as colunas devem ser as seguintes: ID, Nome, Idade, Endereço e Sexo; As células com o nome das colunas, devem ser da mesma cor, o nome da coluna deve estar em negrito
+Para as demais linhas, cada linha deve ser de uma cor diferente
+
+2) Monte uma tabela que disponha o nome das colunas na vertical e as informações na horizontal, cada célula deve ter uma linah de margem de 5px e a cor de fundo deve ser a seguinte: #96D4D4
