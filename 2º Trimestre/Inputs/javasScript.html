@@ -4,20 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <script>
+        //Função que cadastra o nome do usuário quando é chamada
+        //
+        function cadastrarUsuario(){
+            //O comando console.log() imprime no console do navegador a informação que desejarmos
+            //Sempre que for imprimir um texto, coloque entre aspas duplas
+            console.log("A função está executando");
+            //O comando let permite criar uma variável
+            // A variável é utilziada para registrar uma informação
+            // o comando document.getElementById("id_da_tag_html") armazena toda a tag numa variável
+            // e permite trabalhar com as informações dessa tag
+            //seja na leitura ou edição
+            //
+            //Nessa linha de códio está sendo chamado a tag input pelo comando document.getElementById
+            // passando como parâmetro de busca o ID que colocamos para a tag, e com o comando value estamos pegando o texto que foi digitado no campo input
+            // 
+            let nomeUsuario = document.getElementById("nomeUsuario").value;
+            console.log(nomeUsuario);
+        }
+    </script>
 </head>
 <body>
     <div class="formulario">
         <label><b>Nome: </b></label>
-        <input type="text" placeholder="Digite aqui o seu nome...">
+        <input type="text" id="nomeUsuario" placeholder="Digite aqui o seu nome...">
         <br>
-        <label><b>Idade: </b></label><input type="number">
+        <label><b>Idade: </b></label><input type="number" id="idadeUsuario">
         <br>
-        <select>
+        <select id="sexoUsuario">
             <option>Masculino</option>
             <option>Feminino</option>
         </select>
         <br>
-        <button>Cadastrar</button>
+        <button onclick="cadastrarUsuario()">Cadastrar</button>
     </div>
 </body>
 </html>
